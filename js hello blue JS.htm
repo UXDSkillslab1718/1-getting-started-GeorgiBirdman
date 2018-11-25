@@ -1,0 +1,36 @@
+<html>
+<head>
+<title> hello </title>
+<style>
+body {
+color: blue;
+}
+h1 {
+font-family: Arial, sans-serif;
+font-size: 35px;
+color: black;
+}
+</style>
+</head>
+<body> 
+<h1> My new friend</h1>
+<p>Hello, my name is Jeff </p>
+<button id="color">Change color!</button>
+<script>
+document.getElementById('color').onclick = changeColor;
+var currentColor = "blue";
+
+	function changeColor() {
+	if(currentColor == "blue"){
+	document.body.style.color = "red";
+
+currentColor = "red";
+}else{
+	document.body.style.color = "blue";
+	currentColor = "blue";
+}
+return currentColor;
+}
+</script>
+</body>
+</html>
